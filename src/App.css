@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+.overflow-custom {
+  overflow: hidden;
+  overflow-x: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addBook {
+  position: fixed;
+  bottom: 25px;
+  right:25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-add {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  font-size: xx-large;
+  font-weight: 700;
+  color: white;
+  background-color: black;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+

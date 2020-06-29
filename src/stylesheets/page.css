@@ -1,0 +1,93 @@
+body {
+  font-size: 18px;
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/groovepaper.png");
+  font-family: 'Gelasio', serif;
+}
+
+.main-container  {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.main-container div {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 6rem;
+}
+h1 {
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  letter-spacing: .1rem;
+}
+.right-page {
+  padding-top: 100px;
+}
+
+.left-page {
+    text-align: center;
+    padding-top: 4rem;
+    position: fixed;
+    top: 0;
+}
+
+.m-custom {
+  margin-top: 150px;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+} 
+.group:after {
+  clear: both;
+}
+
+.left-page small {
+  font-style: italic;
+}
+
+.left-page img {
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-image {
+  height: 600px;
+  width: 450px;
+}
+.book-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1800px;
+  }
+  
+  .left-page {
+
+    margin:0;
+    position: static;
+  }
+  .right-page {
+    min-height: 100vh;
+    margin:0;
+  }
+}
